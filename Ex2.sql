@@ -1,0 +1,6 @@
+create table customers (
+	customer_id INT primary key,
+    fullname varchar(100) not null,
+    email varchar(100) not null ,
+    age int check (age > 0 and age < 150)
+);
